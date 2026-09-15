@@ -1,5 +1,6 @@
 import { buildMetadata } from "@/lib/metadata";
 import { BUSINESS, SITE_URL } from "@/lib/constants";
+import { SERVICE_AREAS } from "@/lib/service-areas";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { Hero } from "@/components/sections/Hero";
 import { Services } from "@/components/sections/Services";
@@ -32,7 +33,18 @@ export default function HomePage() {
             addressLocality: BUSINESS.addressLocality,
             addressCountry: BUSINESS.addressCountry,
           },
-          areaServed: BUSINESS.city,
+          geo: {
+            "@type": "GeoCoordinates",
+            latitude: BUSINESS.geo.latitude,
+            longitude: BUSINESS.geo.longitude,
+          },
+          areaServed: [
+            { "@type": "City", name: BUSINESS.city },
+            ...SERVICE_AREAS.map((area) => ({
+              "@type": "Place",
+              name: area,
+            })),
+          ],
         }}
       />
 

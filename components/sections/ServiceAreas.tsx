@@ -17,7 +17,7 @@ export function ServiceAreas() {
           {SERVICE_AREAS.map((area) => (
             <li key={area}>
               <span className="block rounded-full border border-ink/10 bg-bg-soft px-5 py-2.5 text-sm font-medium text-ink/75">
-                Čišćenje {area === "Centar" ? "u centru" : `na ${area}i` === `na ${area}i` ? area : area}
+                {area}
               </span>
             </li>
           ))}
