@@ -15,7 +15,7 @@ export function ContactCTA() {
             sizes="100vw"
             className="object-cover"
           />
-          <div className="absolute inset-0 bg-primary/90" />
+          <div className="absolute inset-0 bg-gradient-to-br from-primary-dark/90 via-primary/80 to-primary/70" />
 
           <div className="relative">
             <h2 className="text-3xl font-bold text-white sm:text-4xl">

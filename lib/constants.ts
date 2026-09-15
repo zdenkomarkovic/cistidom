@@ -1,11 +1,14 @@
 // Globalne konstante sajta
 // Ove vrednosti se koriste za SEO, metadata, itd.
 
+// `||` (ne `??`) namerno – hvata i prazan string kao neispravnu vrednost,
+// sto sprecava pad build-a (npr. `new URL("")`) ako je env varijabla
+// definisana ali prazna na hosting platformi.
 export const SITE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
+  process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
 
 export const SITE_NAME =
-  process.env.NEXT_PUBLIC_SITE_NAME ?? "Čisti Dom";
+  process.env.NEXT_PUBLIC_SITE_NAME || "Čisti Dom";
 
 // ─── Podaci o firmi ───────────────────────────────────────────────────────────
 
