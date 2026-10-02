@@ -9,8 +9,8 @@ const REASONS = [
     description: "Javljamo se u najkraćem roku i dolazimo u terminu koji vama odgovara.",
   },
   {
-    icon: "🧴",
-    title: "Kvalitetna sredstva",
+    icon: "🐾",
+    title: "Pet friendly hemija",
     description: "Koristimo profesionalnu opremu i sredstva bezbedna za decu i kućne ljubimce.",
   },
   {

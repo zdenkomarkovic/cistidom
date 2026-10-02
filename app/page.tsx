@@ -38,6 +38,13 @@ export default function HomePage() {
             latitude: BUSINESS.geo.latitude,
             longitude: BUSINESS.geo.longitude,
           },
+          priceRange: BUSINESS.priceRange,
+          openingHoursSpecification: {
+            "@type": "OpeningHoursSpecification",
+            dayOfWeek: BUSINESS.openingHours.days,
+            opens: BUSINESS.openingHours.opens,
+            closes: BUSINESS.openingHours.closes,
+          },
           areaServed: [
             { "@type": "City", name: BUSINESS.city },
             ...SERVICE_AREAS.map((area) => ({

@@ -40,7 +40,8 @@ export function About() {
             {BUSINESS.name} je agencija za profesionalno čišćenje koja stanovnicima
             i firmama u Novom Sadu pruža pouzdanu, detaljnu i doslednu uslugu
             čišćenja. Naš tim čine obučeni i provereni saradnici koji poslu
-            pristupaju odgovorno, uz korišćenje kvalitetnih sredstava i opreme.
+            pristupaju odgovorno, uz korišćenje kvalitetnih sredstava i opreme
+            koja je bezbedna za decu i kućne ljubimce.
           </p>
           <p className="mt-4 text-base leading-relaxed text-ink/70">
             Trudimo se da svaki prostor koji dotaknemo ostavimo besprekorno

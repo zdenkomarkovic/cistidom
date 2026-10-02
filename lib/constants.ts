@@ -16,7 +16,7 @@ export const BUSINESS = {
   name: "Čisti Dom",
   slogan: "Profesionalno čišćenje za vaš dom i posao",
   description:
-    "Agencija za profesionalno čišćenje u Novom Sadu. Čistimo stanove, kuće i poslovne prostore brzo, pouzdano i detaljno.",
+    "Agencija za profesionalno čišćenje u Novom Sadu. Čistimo stanove, kuće i poslovne prostore brzo, pouzdano i detaljno, uz hemiju bezbednu za decu i kućne ljubimce.",
   phone: "066 5196880",
   phoneHref: "tel:+381665196880",
   email: "cistidom587@gmail.com",
@@ -25,6 +25,12 @@ export const BUSINESS = {
   addressLocality: "Novi Sad",
   addressCountry: "RS",
   workingHours: "Pon – Sub: 08:00 – 20:00",
+  openingHours: {
+    days: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+    opens: "08:00",
+    closes: "20:00",
+  },
+  priceRange: "$$",
   geo: {
     latitude: 45.2671,
     longitude: 19.8335,

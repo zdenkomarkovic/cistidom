@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Poppins } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import { SITE_NAME, SITE_URL, BUSINESS } from "@/lib/constants";
 import { Header } from "@/components/layout/Header";
@@ -25,6 +26,18 @@ export const metadata: Metadata = {
     template: `%s | ${SITE_NAME}`,
   },
   description: BUSINESS.description,
+  alternates: {
+    canonical: SITE_URL,
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+    },
+  },
   openGraph: {
     type: "website",
     locale: "sr_RS",
@@ -42,7 +55,21 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="sr" className={`${inter.variable} ${poppins.variable}`}>
+    <html lang="sr-RS" className={`${inter.variable} ${poppins.variable}`}>
+      <head>
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=AW-18454661894"
+          strategy="afterInteractive"
+        />
+        <Script id="google-ads-gtag" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-18454661894');
+          `}
+        </Script>
+      </head>
       <body>
         <Header />
         {children}

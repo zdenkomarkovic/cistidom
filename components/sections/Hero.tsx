@@ -7,9 +7,14 @@ export function Hero() {
     <section className="relative overflow-hidden bg-bg-soft">
       <Container className="grid items-center gap-12 py-16 lg:grid-cols-2 lg:py-24">
         <div>
-          <p className="inline-flex items-center gap-2 rounded-full bg-primary/10 px-4 py-1.5 text-sm font-semibold text-primary">
-            📍 Agencija za čišćenje u {BUSINESS.city}u
-          </p>
+          <div className="flex flex-wrap gap-2">
+            <p className="inline-flex items-center gap-2 rounded-full bg-primary/10 px-4 py-1.5 text-sm font-semibold text-primary">
+              📍 Agencija za čišćenje u {BUSINESS.city}u
+            </p>
+            <p className="inline-flex items-center gap-2 rounded-full bg-emerald-100 px-4 py-1.5 text-sm font-semibold text-emerald-700">
+              🐾 Pet friendly
+            </p>
+          </div>
           <h1 className="mt-5 text-4xl font-bold leading-tight text-ink sm:text-5xl">
             Čist dom i poslovni prostor,{" "}
             <span className="text-primary">bez podizanja prsta</span>
@@ -37,7 +42,7 @@ export function Hero() {
 
           <div className="mt-10 flex flex-wrap gap-x-8 gap-y-3 text-sm text-ink/60">
             <span>✔ Provereni i obučeni tim</span>
-            <span>✔ Sopstvena oprema i sredstva</span>
+            <span>✔ Sredstva bezbedna za decu i ljubimce</span>
             <span>✔ Fer i transparentne cene</span>
           </div>
         </div>

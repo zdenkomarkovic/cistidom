@@ -48,14 +48,14 @@ export const services: Service[] = [
     slug: "kuhinja-kupatilo",
     title: "Dubinsko čišćenje kuhinje i kupatila",
     description:
-      "Uklanjanje masnoće, kamenca i bakterija sa svih površina, pločica i sanitarija.",
+      "Uklanjanje masnoće, kamenca i bakterija sa svih površina, pločica i sanitarija, uz sredstva bezbedna za decu i ljubimce.",
     icon: "🚿",
   },
   {
     slug: "tepisi-namestaj",
     title: "Čišćenje tepiha i tapaciranog nameštaja",
     description:
-      "Dubinsko pranje tepiha, fotelja, kauča i madraca uz uklanjanje mrlja i neprijatnih mirisa.",
+      "Dubinsko pranje tepiha, fotelja, kauča i madraca uz uklanjanje mrlja, dlaka ljubimaca i neprijatnih mirisa, hemijom bezbednom za sve članove domaćinstva.",
     icon: "🛋️",
   },
   {
@@ -76,7 +76,7 @@ export const services: Service[] = [
     slug: "dezinfekcija",
     title: "Dezinfekcija i sanitizacija prostora",
     description:
-      "Profesionalna dezinfekcija prostorija radi uklanjanja bakterija i virusa sa površina.",
+      "Profesionalna dezinfekcija prostorija radi uklanjanja bakterija i virusa sa površina, sredstvima bezbednim za decu i kućne ljubimce.",
     icon: "🦠",
   },
 ];
