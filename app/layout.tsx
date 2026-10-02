@@ -5,6 +5,7 @@ import "./globals.css";
 import { SITE_NAME, SITE_URL, BUSINESS } from "@/lib/constants";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { PhoneConversionTracker } from "@/components/layout/PhoneConversionTracker";
 
 const inter = Inter({
   subsets: ["latin", "latin-ext"],
@@ -71,6 +72,7 @@ export default function RootLayout({
         </Script>
       </head>
       <body>
+        <PhoneConversionTracker />
         <Header />
         {children}
         <Footer />
